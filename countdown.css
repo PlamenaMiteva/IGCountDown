@@ -1,0 +1,26 @@
+.ui-igcountdown-container {
+	position: absolute;
+	opacity: 0.5;
+	background-color: #aaaaaa;
+	text-align: center;
+}
+
+.ui-igcountdown-container > span {
+	font-size: 6em;
+	font-weight: 800;
+}
+
+.container{
+	width: 100%;
+	min-height: 500px;
+}
+
+.col{
+	box-sizing: border-box;
+	width: 30%;
+	height: 150px;
+	margin: 10px;
+	float: left;
+	display: inline;
+	border: 1px solid #ff3030
+}

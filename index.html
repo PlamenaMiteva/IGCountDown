@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link type="text/css" href="countdown.css" rel="stylesheet" />
+    <link type="text/css" href="http://localhost/ig_ui17.2/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.container>.col').igCountDown({
+                startValue: 10
+            });
+
+            $("#destroy").on('click', function () {
+                $('.container > .col:first').igCountDown("destroy");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="col">
+            Session 1
+        </div>
+        <div class="col">
+            Session 2
+        </div>
+        <div class="col">
+            Session 3
+        </div>
+        <div class="col">
+            Session 4
+        </div>
+        <div class="col">
+            Session 5
+        </div>
+        <div class="col">
+            Session 6
+        </div>
+    </div>
+    <input id="destroy" type="button" value="destroy first" />
+</body>
+</html>
